@@ -48,7 +48,7 @@ const Nav = () => {
           <ul 
           className={`fixed top-0 left-0 w-full h-0 overflow-hidden transition duration-300
           ease-in-out bg-gray-300 z-50 
-          ${!isShow ? 'h-full overflow-hidden md:h-auto md:overflow-hidden' : ''}`}>
+          ${!isShow ? 'h-full overflow-auto md:h-auto md:overflow-visible' : ''}`}>
           <FaTimes size={20} color="black" className="mx-auto mt-20"/>
           {navLinks.map((item) => (
             <li key={item.label} className="gap-10 mt-5 flex ">
